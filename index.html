@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+  
+<section id="container">
+	<div id="parallax">
+
+		    <div id="logo">
+		        <img src="img/logo.png" id="logoImg" alt="logo"/>
+            </div>
+            
+             <div id="startBtn" >
+		        <p id="startBtnP">Press To Start</p>
+            </div>
+            
+		    
+			<div id="city5">
+				<img src="img/ss1.png" alt="img1" id="city4Img" />
+			</div>
+
+			<div id="city4">
+				<img src="img/ss2.png" alt="img1" id="city4Img" />
+			</div>
+
+			<div id="city3">
+				<img src="img/ss3.png" alt="img1" id="city3Img" />
+			</div>
+
+			<div id="city2">
+				<img src="img/ss4.png" id="city2Img" alt="img1" />
+			</div>
+			
+			<div id="city1">
+			    <img src="img/ss5.png" id="city1Img" alt="img1" /> 
+			    
+			    <div id="header">
+			        <img src="img/Header.svg" alt="logo"/>
+			    </div>
+			    
+                <div id="mMenu">
+			         <img src="img/options.svg" alt="logo"/>
+                    
+                    
+                     <div id="menuA">
+			             <div id="signIn">
+			                <img src="img/button.png" alt="logo"/>
+			             </div>
+			             <div id="mMaking">
+			                <img src="img/button.png" alt="logo"/>
+			             </div>
+			              <div id="options">
+			                <img src="img/button.png" alt="logo"/>
+			             </div>
+			             <div id="back1">
+			                <img src="img/backbtn.png" alt="logo"/>
+			             </div>
+			         </div>
+			         
+			         
+			         <div id="menuB">
+			             <div id="subHeader1">
+			                 <img src="img/loginheader.png" alt="header"/>
+			             </div>
+
+			             <div id="back2">    
+			                 <img src="img/backbtn.png" alt="header"/>
+			             </div>
+			             <div id="sub1">
+			                 <img src="img/submitbtn.png" alt="header"/>
+			             </div>
+			         </div>
+			             
+			         <div id="menuC">
+			             <div id="join1">
+			                 <img src="img/button.png" alt="join"/>
+			             </div>
+			             <div id="host1">
+			                 <img src="img/hostBtn.png" alt="host"/>
+			             </div>
+			             <div id="back3">    
+			                 <img src="img/backbtn.png" alt="header"/>
+			             </div>
+                    </div>
+			</div>
+
+			    
+			<div id="jMenu">
+			    <img src="img/Jmenu.png" alt="jmenu"/>
+			    
+			    <div id="menuD">
+			             <div id="join2">
+			                <img src="img/button.png" alt="logo"/>
+                    </div>
+			             <div id="back4">
+			                <img src="img/backbtn.png" alt="logo"/>
+			             </div>
+			         </div>
+			</div>
+			
+			
+		<div id="hMenu">
+		    <img src="img/hostMenu.png" alt="hmenu"/>
+		    
+		      
+                     
+                         <div id="subHeader2">
+                             <img src="img/hostheader.png" alt="logo"/>
+                         </div>
+			             <div id="host2">
+			                <img src="img/hostBtn.png" alt="logo"/>
+			             </div>
+			             <div id="back5">
+			                <img src="img/backbtn.png" alt="logo"/>
+			             </div>
+		
+		
+	</div>
+    </div>
+    </div>
+</section>
+
+
+<script type="application/javascript">
+    
+//    Main menu Navigation
+    
+    var menuA = document.getElementById("menuA");
+    var menuB = document.getElementById("menuB");
+    var menuC = document.getElementById("menuC");
+    var mMenu = document.getElementById("mMenu");
+    var jMenu = document.getElementById("jMenu");
+    var hMenu = document.getElementById("hMenu");
+    var join1 = document.getElementById("join1");
+    var host1 = document.getElementById("host1");
+    var signIn = document.getElementById("signIn");
+    var mMaking = document.getElementById("mMaking");
+    var back2 = document.getElementById("back2");
+    var back3 = document.getElementById("back3");
+    var back4 = document.getElementById("back4");
+    var back5 = document.getElementById("back5");   
+    
+    signIn.addEventListener("click", function(){
+        menuA.style.display = "none";
+        menuB.style.display = "block";
+    });
+    
+    mMaking.addEventListener("click", function(){
+        menuA.style.display = "none";
+        menuC.style.display = "block";
+    });
+    
+     back2.addEventListener("click", function(){
+        menuA.style.display = "block";
+        menuB.style.display = "none";
+    });
+    
+    back3.addEventListener("click", function(){
+        menuA.style.display = "block";
+        menuC.style.display = "none";
+    });
+    
+    join1.addEventListener("click", function(){
+        jMenu.style.display = "block";
+        mMenu.style.display = "none";
+    });
+    
+    
+    back4.addEventListener("click", function(){
+        jMenu.style.display = "none";
+        mMenu.style.display = "block";
+    });
+    
+    host1.addEventListener("click", function(){
+       mMenu.style.display = "none";
+        hMenu.style.display = "block";
+    });
+    
+      back5.addEventListener("click", function(){
+        hMenu.style.display = "none";
+          mMenu.style.display = "block";
+          menuC.style.display = "block";
+    });
+    
+    </script>
+</body>
+</html>
+   
