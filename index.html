@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+   
 </head>
 <body>
   
-<section id="container">
+<section id="container1">
 	<div id="parallax">
 
 		    <div id="logo">
@@ -106,9 +106,6 @@
 			
 		<div id="hMenu">
 		    <img src="img/hostMenu.png" alt="hmenu"/>
-		    
-		      
-                     
                          <div id="subHeader2">
                              <img src="img/hostheader.png" alt="logo"/>
                          </div>
@@ -118,15 +115,99 @@
 			             <div id="back5">
 			                <img src="img/backbtn.png" alt="logo"/>
 			             </div>
-		
-		
 	</div>
+    
+<!--
+    <div id="menuD">
+                        <div id="lightBox">
+                             <img src="img/light%20box.png" alt="logo"/>
+                         </div>
+			             <div id="darkBox">
+			                <img src="img/dark%20box.png" alt="logo"/>
+			             </div>
+			             <div id="menuDBox">
+			                <img src="img/btnBox.png" alt="logo"/>
+			             </div>
+    </div>
+-->
+    
     </div>
     </div>
 </section>
 
 
-<script type="application/javascript">
+<section id="container2">
+    <div id="parallax2" class="shit">
+
+		    
+            <div id="bg5" class = "bgScroll">
+				<img src="img/bg4.png" alt="img1" id="bg4Img" />
+			</div>
+         
+            <div id="bg4" class = "bgScroll">
+				<img src="img/bg3.png" alt="img1" id="bg4Img" />
+			</div>
+			
+			<div id="bg3" class = "bgScroll">
+				<img src="img/bg2.png" alt="img1" id="bg3Img" />
+			</div>
+
+			<div id="bg2" class = "bgScroll">
+				<img src="img/bg1.png" id="bg2Img" alt="img1" />
+			</div>
+			
+			<div id="chars1" class = "bgScroll">
+			<img src="img/Light-Commander.gif" alt="img2" />
+			</div>
+			
+			<div id="chars2" class = "bgScroll">
+			<img src="img/light-archer.gif" alt="img2" />
+			</div>
+			
+			<div id="chars3" class = "bgScroll">
+			<img src="img/Light-Soldier.gif" alt="img2" />
+			</div>
+			
+			
+			<div id="chars4" >
+			<img src="img/Light%20Dog.svg" alt="img2" class = "bgScroll"/>
+			</div>
+			
+			<div id="chars5" class = "bgScroll">
+			<img src="img/maskedmonster.svg" alt="img2" />
+			</div>
+			
+			<div id="chars6" class = "bgScroll">
+			<img src="img/maskedwitch.svg" alt="img2" />
+			</div>
+			
+			<div id="chars7" class = "bgScroll">
+			<img src="img/skyrzz.svg" alt="img2" />
+			</div>
+			
+			
+			<div id="chars8" class = "bgScroll">
+			<img src="img/maskdog.svg" alt="img2" />
+			</div>
+			
+			
+	
+    </div>
+
+    		<div id="bg1">
+			    <img src="img/battlefieldUI2.svg" id="city1Img" alt="img1" />
+			    
+			    <div id="cardContainer">
+			        <div id="hand">
+			            
+			        </div>
+			    </div>
+    				
+	</div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
     
 //    Main menu Navigation
     
@@ -187,6 +268,21 @@
           menuC.style.display = "block";
     });
     
+    
+    
+    
+    $(document).ready(function() {
+var movementStrength = 25;
+var height = movementStrength / $(window).height();
+var width = movementStrength / $(window).width();
+$(".bgScroll").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -1 -25;
+          var newvalueY = height * pageY * -1;
+          $('.bgScroll').css({"top" : newvalueY+"px", "left" : newvalueX+"px"});
+});
+});
     </script>
 </body>
 </html>

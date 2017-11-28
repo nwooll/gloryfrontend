@@ -1,6 +1,9 @@
 
 /*limit scroll once elements are in place with overflow -y hidden*/
 
+
+/*Menu screens*/
+
 #parallax {
     perspective: 1px;
     perspective-origin: center;
@@ -10,7 +13,8 @@
     height: 100%;
 }
 
-#container{
+#container1{
+    display: none;
     position: absolute;
     margin: auto;
     width: 90vw;
@@ -387,5 +391,142 @@ filter: drop-shadow(0px 0px 10px #ffffff);
       } 
 
 
+/*Battlefield*/
+
+#container2{
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px;
+    display:block;
+}
+
+#parallax2 {
+    perspective: 1px;
+    perspective-origin: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: auto;
+    width: 110vw;
+    height: 110vh;
+    margin: auto;
+}
+#bg1 {
+    position: absolute;
+    margin: auto;
+    bottom: -200px;
+    width: 100vw;
+    height: auto;
+    transform: scale(1.2);
+    
+}
+
+#bg1Img{
+    width: 100vw;
+}
+
+#chars1 img{
+    position: absolute;
+    transform: translateZ(.15px) scale(.15) translateY(-630vh) translateX(-240vw); 
+    width: 100%
+}
+
+#chars2 img{
+    position: absolute;
+    transform: translateZ(.15px) scale(.15) translateY(-350vh) translateX(-160vw); 
+    width: 100%
+}
+
+
+#chars3 img{
+    position: absolute;
+    transform: translateZ(.15px) scale(.15) translateY(-300vh) translateX(-100vw); 
+    width: 100%
+}
+
+#chars4 img{
+    position: absolute;
+    transform: translateZ(.14px) scale(.12) translateY(-10vh) translateX(-50vw); 
+    width: 100%
+}
+
+#chars5 img{
+    position: absolute;
+    transform: translateZ(.15px) scale(.19) translateY(-360vh) translateX(180vw); 
+    width: 100%
+}
+
+#chars6 img{
+    position: absolute;
+    transform: translateZ(.15px) scale(.10) translateY(-680vh) translateX(130vw); 
+    width: 100%
+}
+
+
+#chars7 img{
+    position: absolute;
+    transform: translateZ(.15px) scale(.09) translateY(-1320vh) translateX(235vw); 
+    width: 100%
+}
+
+#chars8 img{
+    position: absolute;
+    transform: translateZ(.15px) scale(.07) translateY(-640vh) translateX(70vw); 
+    width: 100%
+}
+
+#bg2 {
+    position: absolute;
+    transform: translateZ(0px) scale(1) translateY(-5vh); 
+    width: 100%;
+}
+
+#bg2Img{
+    width: 100%;
+}
+
+#bg3 {
+    position: absolute;
+    transform: translateZ(-.25px) scale(1.25) translateY(0vh);
+    width: 100%;
+}
+
+#bg3Img{
+    width: 100%;
+}
+
+#bg4 {
+    position: absolute;
+    transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
+    width: 100%;
+}
+
+#bg4Img{
+    width: 100%;
+}
+
+#bg5 {
+    position: absolute;
+    transform: translateZ(-1px) scale(2) translateY(-5vh); 
+    width: 100%;
+}
+
+#bg5Img{
+    width: 100%;
+}
+
+
+/*paralax*/
+
+
+/*cards*/
 
 
