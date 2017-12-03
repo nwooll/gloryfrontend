@@ -1,0 +1,1085 @@
+/*limit scroll once elements are in place with overflow -y hidden*/
+
+
+/*Menu screens*/
+
+#parallax {
+    perspective: 1px;
+    perspective-origin: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#container1{
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    overflow: hidden;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 10px;
+    animation: bgchange infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    font-size: 36pt;
+
+}
+
+
+#logo {
+    transform: translateZ(.15px) scale(.5) translateY(0vh) translateX(0vw);
+    z-index: 100;
+    top: 10vh;
+    left:0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    
+}
+
+#logoImg {
+    width: 45%;
+}
+
+/*Main Menu*/
+
+#startBtn p{
+    transform: translateZ(.15px) scale(.5) translateY(0vh) translateX(0vw);
+    z-index: 100;
+    bottom: 10vh;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    animation: startGlow 2s infinite;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+
+#header img{
+    width: 30%;
+    left:0;
+    right: 0;
+    bottom:1450px;
+    margin: auto;
+    height: auto;
+    position: absolute;
+}
+
+#scrollHere{
+    width: auto;
+    left:0;
+    right: 0;
+    bottom:1800px;
+    margin: auto;
+    position: absolute;    
+    height: auto;
+}
+
+
+#mMenu{
+    text-align: center;
+    width: 35%;
+    left:0;
+    right: 0;
+    bottom: 900px;
+    margin: auto;
+    position: absolute;    
+    height: auto;
+}
+
+#mMenu img{
+    width: 100%;
+    
+}
+
+#signIn img{
+    width: 200px;
+    left:0;
+    right: 0;
+    bottom: 350px;
+    margin: auto;
+    position: absolute;
+    cursor: pointer;
+}
+
+#mMaking img{
+    width: 200px;
+    left:0;
+    right: 0;
+    bottom: 300px;
+    margin: auto;
+    position: absolute;
+}
+
+
+#options img{
+    width: 200px;
+    left:0;
+    right: 0;
+    bottom: 250px;
+    margin: auto;
+    position: absolute;
+}
+
+
+#back1 img{
+      left:0;
+    right: 0;
+    bottom: 150px;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+}
+
+#signIn img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#mMaking img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#options img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#back1 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+/*login Menu*/
+#menuB{
+    display: none;
+}
+
+#subHeader1 img{
+    left:0;
+    right: 0;
+    top: 70px;
+    margin: auto;
+    position: absolute;
+    width: 60%;    
+}
+
+#back2 img{
+    left:70px;
+    bottom: 160px;
+    margin: auto;
+    position: absolute;
+    width: 35%;
+    
+}
+
+#sub1 img{
+    right: 70px;
+    margin: auto;
+    position: absolute;
+    width: 35%;
+    bottom: 160px;
+}
+
+#back2 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#sub1 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+/*Matchmaking Menu*/
+#menuC{
+    display: none;
+}
+    
+#join1 img{
+      left:0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+}
+
+
+#host1 img{
+    left:0;
+    right: 0;
+    top: 150px;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+}
+
+#back3 img{
+    left:0;
+    right: 0;
+    top: 260px;
+    margin: auto;
+    position: absolute;
+    width: 200px;
+}
+
+#join1 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#host1 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#back3 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+/*join Menu*/
+
+#jMenu{
+    display: none;
+    width: 45%;
+    left:0;
+    right: 0;
+    bottom: 890px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+    
+}
+
+#jMenu img{
+    width: 100%;    
+}
+
+#back4 img{
+    left: 70px;
+    bottom: 140px;
+    margin: auto;
+    position: absolute;
+    width: 30%;
+    
+}
+
+#join2 img{
+    right: 70px;
+    margin: auto;
+    position: absolute;
+    width: 30%;
+    bottom: 140px;
+}
+
+#back4 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#join2 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+
+/*Host game page*/
+
+#hMenu{
+    display: none;
+    width: 35%;
+    left:0;
+    right: 0;
+    bottom: 900px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#hMenu img{
+    width: 100%; 
+}
+
+#host2 img{
+    right: 70px;
+    margin: auto;
+    position: absolute;
+     width: 32%;
+    bottom: 160px;
+}
+
+#back5 img{
+   left: 70px;
+    bottom: 160px;
+    margin: auto;
+    position: absolute;
+     width: 32%;
+}
+
+#subHeader2 img{
+    left:0;
+    right: 0;
+    top: 70px;
+    margin: auto;
+    position: absolute;
+    width: 60%;     
+}
+
+#host2 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#back5 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#inputDiv{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    background-image: url("../img/buttonarea.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15%;
+    transform: scale(.5);
+}
+
+#inputDiv input{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 40%;
+}
+
+
+
+/*character select screen*/
+
+#header2 img{
+     width: 600px;
+    left:0;
+    right: 0;
+    bottom:1500px;
+    margin: auto;
+    height: auto;
+    position: absolute;
+}
+
+#charMenu{
+    display: none;
+    width: auto;
+    left:0;
+    right: 0;
+    bottom:800px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#lightBox{
+    width:400px;
+    left:80px;
+    bottom:140px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#lightBox img:hover{
+    filter: drop-shadow(0px 0px 30px #ffffff);
+    transform: scale(1.1);
+}
+
+#lightBox img{
+   width: 100%;
+   transition: 1s;
+}
+
+#darkBox{
+    width: 400px;
+    right: 80px;
+    bottom:140px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#darkBox img{
+    width: 100%;
+    transition: 1s;
+}
+
+#darkBox img:hover{
+    filter: drop-shadow(0px 0px 30px #000000);
+    transform: scale(1.1);
+}
+
+#menuDBox{
+width: 250px;   
+    left:0;
+    right: 0;
+    bottom:110px;
+    margin: auto;
+    position: absolute;
+    height: auto;
+}
+
+#menuDBox img{
+    width: 100%;
+}
+
+#readyP img{
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 150px;
+    bottom: 200px;
+}
+
+#back6 img{
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    margin: auto;
+    position: absolute;
+    width: 150px;
+}
+#readyP img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#back6 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+/*Start Screen Background*/
+
+#city1 {
+    position: absolute;
+    transform: translateZ(.25px) scale(.75) translateY(-40vh); 
+    width: 100%;
+}
+
+#city1Img{
+    width: 100%;
+}
+
+#city2 {
+    position: absolute;
+    transform: translateZ(0px) scale(1) translateY(-1vh); 
+    width: 100%;
+}
+
+#city2Img{
+    width: 100%;
+}
+
+#city3 {
+    position: absolute;
+    transform: translateZ(-.25px) scale(1.25) translateY(10vh);
+    width: 100%;
+}
+
+#city3Img{
+    width: 100%;
+}
+
+#city4 {
+    position: absolute;
+    transform: translateZ(-.5px) scale(1.5) translateY(30vh);
+    width: 100%;
+}
+
+#city4Img{
+    width: 100%;
+}
+
+#city5 {
+    position: absolute;
+    transform: translateZ(-.75px) scale(1.75) translateY(35vh); 
+    width: 100%;
+}
+
+#city5Img{
+    width: 100%;
+}
+/*animations*/
+
+@keyframes bgchange {
+    0%   {background-color: #fdfdfd;}
+    100% {background-color: #bababa;}
+}
+
+@keyframes startGlow {
+           0% {color: #ffffff;}
+           100% {color: rgba(0, 0, 0, 0);}
+      } 
+
+
+
+/*Battlefield*/
+
+
+#menuContainer{
+    z-index: 10111;
+    position: absolute;
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    left: 10px;
+    top: 10px;
+    background-size: cover;
+    background-image: url("../img/titlebox.svg");
+    display: none;
+}
+
+#menuBtn img{
+    z-index: 1011;
+    position: absolute;
+    margin: auto;
+    left: 140px;
+    top: 100px;
+    height: auto;
+    width: 15%; 
+    display: block;
+}
+
+#menuBtn img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.menuContBg{
+    z-index: 1011;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 36pt;
+    top: 40px;
+    font-family: Roboto;
+    color: #ffffff;
+}       
+
+#back7 img{
+     left: 40px;
+    bottom: 50px;
+    margin: auto;
+    position: absolute;
+    width: 40%;
+}
+
+#back7 img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#exitGame img{
+     right: 40px;
+    bottom: 50px;
+    margin: auto;
+    position: absolute;
+    width: 40%;
+}
+
+#exitGame img:hover{
+filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#container2{
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:none;
+}
+
+#parallax2 {
+    perspective: 1px;
+    perspective-origin: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: auto;
+    width: 110vw;
+    height: 110vh;
+    margin: auto;
+}
+
+
+#bg1{
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 30vh;
+    transform: scale(1.2);
+    background-size: cover;
+    background-image: url("../img/battlefieldUI2.svg")
+}
+
+#charContainer{
+      position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 100vw;
+    z-index: 100000;
+}
+
+
+
+#lightArcher{
+position: absolute;
+width: 200px;
+height: 230px;
+transform: scale(1.2);
+margin: auto;
+background-image: url("../img/light-archer-idle.gif");
+background-size: contain;
+left: 200px;
+bottom: 180px;
+background-repeat: no-repeat;
+}
+
+#lightArcher:hover{
+    opacity: .5;
+}
+
+
+#lightCommander{
+position: absolute;
+width: 200px;
+height: 215px;
+margin: auto;
+background-image: url("../img/Light-Commander-idle.gif");
+background-size: contain;
+left: 10px;
+transform: scale(1.5);
+bottom: 300px;
+background-repeat: no-repeat;
+}
+
+#lightCommander:hover{
+    opacity: .5;
+}
+
+
+#lightDog{
+position: absolute;
+left: 500px;
+width: 200px;
+height: 100px;
+margin: auto;
+background-image: url("../img/Light-Dog-idle.gif");
+background-size: contain;
+bottom: 220px;
+background-repeat: no-repeat;
+}
+
+#lightDog:hover{
+    opacity: .5;
+}
+
+#lightSoldier{
+position: absolute;
+width: 200px;
+height: 230px;
+margin: auto;
+background-image: url("../img/Light-Soldier-idle.gif");
+background-size: contain;
+bottom: 200px;
+left: 350px;
+background-repeat: no-repeat;
+}
+
+#lightSoldier:hover{
+    opacity: .5;
+}
+
+#darkCommander{
+position: absolute;
+width: 200px;
+height: 215px;
+margin: auto;
+background-image: url("../img/maskedmonsteridle.gif");
+background-size: contain;
+right: 10px;
+transform: scale(1.5);
+bottom: 300px;
+background-repeat: no-repeat;
+}
+
+#darkCommander:hover{
+    opacity: .5;
+}
+
+
+#darkWizard{
+position: absolute;
+width: 200px;
+height: 230px;
+transform: scale(1.2);
+margin: auto;
+background-image: url("../img/maskedwitchidle.gif");
+background-size: contain;
+right: 200px;
+bottom: 180px;
+background-repeat: no-repeat;
+}
+
+#darkWizard:hover{
+    opacity: .5;
+}
+
+#darkDog{
+position: absolute;
+right: 460px;
+margin: auto;
+transform: scale(.5);
+background-image: url("../img/maskdog.png");
+bottom: 150px;
+width: 325px;
+height: 253px;
+animation: maskDogIdle 1.5s steps(10) infinite;
+}
+
+#darkDog:hover{
+    opacity: .5;
+}
+
+#darkGrunt{
+position: absolute;
+width: 200px;
+height: 230px;
+margin: auto;
+background-image: url("../img/wellmanidle.gif");
+background-size: contain;
+bottom: 200px;
+right: 350px;
+background-repeat: no-repeat;
+}
+
+#darkGrunt:hover{
+    opacity: .5;
+}
+
+#bg2 {
+    position: absolute;
+    transform: translateZ(0px) scale(1) translateY(-5vh); 
+    width: 100%;
+}
+
+#bg2Img{
+    width: 100%;
+}
+
+#bg3 {
+    position: absolute;
+    transform: translateZ(-.25px) scale(1.25) translateY(0vh);
+    width: 100%;
+}
+
+#bg3Img{
+    width: 100%;
+}
+
+#bg4 {
+    position: absolute;
+    transform: translateZ(-.75px) scale(1.75) translateY(-5vh);
+    width: 100%;
+}
+
+#bg4Img{
+    width: 100%;
+}
+
+#bg5 {
+    position: absolute;
+    transform: translateZ(-1px) scale(2) translateY(-5vh); 
+    width: 100%;
+}
+
+#bg5Img{
+    width: 100%;
+}
+
+
+
+
+
+/*cards*/
+
+
+
+
+.cards{
+        position: relative;
+    z-index: 10000;
+    /* top: 90px; */
+    width: 200px;
+    height: 285px;
+    float: right;
+    display: inline-block;
+    margin: auto;
+    right: 25px;
+  
+}
+
+.cardContainer{
+    width: 100%;
+    height: 30vh;
+    z-index: 1010;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+}
+
+.hand{
+    width: 50vw;
+    height: 30vh;
+    z-index: 1030;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+}
+
+#card1{
+    background-image: url("../img/DattackPlus10.png");
+    background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#card2{
+    background-image: url("../img/DattackPlus10.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+
+#card3{
+    background-image: url("../img/DattackPlus10.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+}
+
+
+
+    #card1:hover{ animation: hoverTEST .75s infinite ease-in-out;}
+    #card2:hover{ animation: hoverTEST .75s infinite ease-in-out;}
+    #card3:hover{ animation: hoverTEST .75s infinite ease-in-out;}
+
+ @keyframes hoverTEST {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+        transform: translatey(0px);
+    }
+    50% {
+        /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2)*/;
+        transform: translatey(-20px);
+    }
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+        transform: translatey(0px);
+    }
+} 
+
+.nameTag {
+    background:url("../img/nametag.svg") no-repeat;
+}
+/* 
+.nameTag-Active {
+    display: block;
+} */
+
+.nameTagCommanders { 
+    background-size: contain;
+    height: 90px;
+    width: 313px;
+    position: absolute;
+    margin: auto;
+    pointer-events: none;
+}
+
+#ntLightCommander {
+    top: 50px;
+}
+
+.nameTagMinions {
+    background-size: contain;
+    height: 90px;
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    /* display: none */ 
+    pointer-events: none;
+}
+
+.minionSelected {
+    box-shadow: 0px 0px 5px #fff;
+}
+
+#ntlightSoldier {
+    left: 310px;
+    top: 200px;
+    display: none;
+}
+#ntlightArcher {
+    left: 200px;
+    top: 120px;
+    font-size: 1em;
+    display: none;
+}
+
+
+#ntlightCommander { 
+    display: none;
+    left: 30px;
+    top: 10px;
+    font-size: 1em;
+}
+#ntlightDog{
+    left: 510px;
+    top: 260px;
+    font-size: 1.2em;
+   display: none;
+}
+
+
+
+
+#ntdarkCommander {
+    top: 25px;
+    right: 5px;
+    font-size: 1.1em;
+    display: none;
+}
+
+#ntdarkDog {
+    top: 280px;
+    right: 550px;
+    display: none;
+}
+
+#ntdarkGrunt {
+    top: 190px;
+    right: 400px;
+    display: none;
+}
+
+#ntdarkWizard {
+    top: 180px;
+    right: 250px;
+    display: none;
+}
+
+/* Media Query */ 
+
+
+/* Room Div */
+
+#roomDiv {
+    color: #F2f2f2;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    bottom: 0;
+    left: 70px;
+    overflow: none;
+} 
+
+
+
+
+/*animations*/
+
+ @keyframes maskDogIdle {
+           0% { background-position: 0px 0px; }
+           37.4% { background-position: -3250px 0px; }
+           
+           37.41% { background-position: 0px -253px; }
+           79% { background-position: -3250px -253px; }
+           
+           79.001% {animation: maskdog 1s steps(4) infinite;
+               background-position: 0px -506px; }
+           100% { background-position: -1300px -506px; }
+           
+        }
+
+
+
+/*Media Queries*/
+
+
+
+@media only screen and (min-width: 2550px) {
+    #scrollHere{
+        bottom: 2500px;
+    }
+    #mMenu{}
+    #signIn{}
+    #mMaking{}
+    #options{}
+    #back1{}
+    #subHeader1{}
+    #back2{}
+    #sub1{}
+    #join1{}
+    #host1{}
+    #back3{}
+    #jMenu{}
+    #back4 {}
+    #join2{}
+    #hMenu{}
+    #host2{}
+    #back5{}
+    #subHeader2{}
+    #inputDiv{}
+    #header2{}
+    #charMenu{}
+    #lightBox{}
+    #darkBox{}
+    #menuDBox{}
+    #readyP{}
+    #back6{}
+    #city1{}
+    #city2{}
+    #city3{}
+    #city4{}
+    #city5{}
+    .cards{}
+    .cardContainer{}
+    .hand{}
+    .nameTagCommanders{}
+    .nameTagMinions{}
+    #ntlightSoldier{}
+    #ntlightArcher{}
+    #ntlightCommander{}
+    #ntlightDog{}
+    #ntdarkCommander{}
+    #ntdarkDog{}
+    #ntdarkGrunt{}
+    #ntdarkWizard{}
+}
